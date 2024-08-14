@@ -1,4 +1,7 @@
-﻿namespace LinQ_C__02_Demo
+﻿using System.Diagnostics;
+using System.Numerics;
+
+namespace LinQ_C__02_Demo
 {
     internal class Program
     {
@@ -156,7 +159,7 @@
             //                                       {
             //                                          IndexProduct=Index,
             //                                           P.ProductName,
-                                                       
+
             //                                       });
 
 
@@ -167,6 +170,94 @@
 
             #endregion
             #endregion
+
+            #region 2.Category : Ordering Operators [Ascending , Descending , Reverse , ThenBy , ThenByDescending]
+
+            #region Get Products Ordered By Price Asc
+            ////Fluent Syntax
+            //var Result = ListGenerator.ProductsList.OrderBy(P=>P.UnitPrice);
+
+            ////Query Syntax
+            //Result=from P in ListGenerator.ProductsList
+            //       orderby P.UnitPrice
+            //       select P;
+            //foreach (var ResultItem in Result)
+            //{
+            //    Console.WriteLine(ResultItem);
+            //}
+
+
+            #endregion
+
+            #region Get Products Ordered By Price Desc
+
+            ////Fluent Syntax
+            //var Result = ListGenerator.ProductsList.OrderByDescending(P => P.UnitPrice);
+
+            ////Query Syntax
+            //Result = from P in ListGenerator.ProductsList
+            //         orderby P.UnitPrice descending
+            //         select P;
+            //foreach (var ResultItem in Result)
+            //{
+            //    Console.WriteLine(ResultItem);
+            //}
+
+            #endregion
+
+
+            #region Get Products Ordered By Price Asc and Number Of Items In Stock
+            ////Fluent Syntax ThenBy Asc
+            //var Result = ListGenerator.ProductsList.OrderBy(P => P.UnitPrice)
+            //                                       .ThenBy(P=>P.UnitsInStock);
+
+            ////Fluent Syntax ThenBy Des
+            //var Result02 = ListGenerator.ProductsList.OrderBy(P => P.UnitPrice)
+            //                                       .ThenByDescending(P => P.UnitsInStock);
+
+
+            //foreach (var ResultItem in Result)
+            //{
+            //    Console.WriteLine(ResultItem);
+            //}
+
+            #endregion
+
+            #region Reverse
+            //Fluent Syntax Reverse
+            //var Result = ListGenerator.ProductsList.OrderBy(P => P.UnitPrice);
+            //ProductID: 33,ProductName: Geitost,CategoryDairy Products, UnitPrice:2.5000,UnitsInStock: 112
+            //ProductID: 24,ProductName: Guaran? Fant?stica,CategoryBeverages,UnitPrice: 4.5000,UnitsInStock: 20
+            //ProductID: 13,ProductName: Konbu,CategorySeafood,UnitPrice: 6.0000,UnitsInStock: 24
+            //ProductID: 52,ProductName: Filo Mix, CategoryGrains/ Cereals,UnitPrice: 7.0000,UnitsInStock: 38
+            //ProductID: 54,ProductName: Tourtière,CategoryMeat / Poultry,UnitPrice: 7.4500,UnitsInStock: 21
+            //ProductID: 75,ProductName: Rh? nbr?u Klosterbier, CategoryBeverages, UnitPrice:7.7500,UnitsInStock: 125
+            //ProductID: 23,ProductName: Tunnbr? d, CategoryGrains/ Cereals,UnitPrice: 9.0000,UnitsInStock: 61
+
+            //foreach (var ResultItem in Result)
+            //{
+            //    Console.WriteLine(ResultItem);
+            //}
+
+            //var  Result02 = ListGenerator.ProductsList.OrderBy(P => P.UnitPrice).Reverse();
+            //ProductID: 38,ProductName: Côte de Blaye,CategoryBeverages,UnitPrice: 263.5000,UnitsInStock: 17
+            //ProductID: 29,ProductName: Th? ringer Rostbratwurst,CategoryMeat / Poultry,UnitPrice: 123.7900,UnitsInStock: 0
+            //ProductID: 9,ProductName: Mishi Kobe Niku,CategoryMeat / Poultry,UnitPrice: 97.0000,UnitsInStock: 29
+            //ProductID: 20,ProductName: Sir Rodney's Marmalade,CategoryConfections,UnitPrice:81.0000,UnitsInStock:40
+            //ProductID: 18,ProductName: Carnarvon Tigers, CategorySeafood, UnitPrice:62.5000,UnitsInStock: 42
+            //ProductID: 59,ProductName: Raclette Courdavault, CategoryDairy Products,UnitPrice: 55.0000,UnitsInStock: 79
+
+
+            //foreach (var ResultItem in Result02)
+            //{
+            //    Console.WriteLine(ResultItem);
+            //}
+            #endregion
+
+
+            #endregion
+
+
         }
     }
 }
