@@ -257,6 +257,13 @@ namespace LinQ_C__02_Demo
 
             #endregion
 
+            #region 4.Category : Elements Operator [ First , Last , LastOrDefault , FirstOrDefault , ElementAt , ElementAtOrDefault , Single , SingleOrDefault ]
+
+            // - Immediate Execution
+            // [Valid Only With Fluent Syntax]
+
+            #endregion
+
 
         }
     }
