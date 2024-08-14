@@ -464,6 +464,33 @@ namespace LinQ_C__02_Demo
 
             #endregion
 
+            #region 9.Category : Quantifier Operator - Return boolean
+            #region Any
+            //var Result = ListGenerator.ProductsList.Any();
+            //Console.WriteLine(Result); //True 
+            //var Result02 = ListGenerator.ProductsList.Any(P=>P.UnitsInStock<0);//True
+            //Console.WriteLine(Result02); //False
+            #endregion
+            #region All
+
+            //var Result02 = ListGenerator.ProductsList.All(P => P.UnitsInStock > 0);
+            //Console.WriteLine(Result02); //False
+            #endregion
+
+            #region SequenceEqual
+            //var Seq01 = Enumerable.Range(0, 100);
+            //var Seq02 = Enumerable.Range(0, 100);
+            //var Result = Seq01.SequenceEqual(Seq02);
+            //Console.WriteLine(Result);  //true
+            //var Seq03 = Enumerable.Range(0, 120);
+
+            //var Result01 = Seq01.SequenceEqual(Seq03);
+            //Console.WriteLine(Result01);//false 
+            #endregion
+
+
+            #endregion
+
         }
     }
 }
