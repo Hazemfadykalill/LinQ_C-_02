@@ -304,7 +304,7 @@ namespace LinQ_C__02_Demo
 
             #endregion
 
-            #region 5.Category : Casting [Conversion] Operators - Immediate Execution
+            #region 6.Category : Casting [Conversion] Operators - Immediate Execution
             #region ToList
             // //Old
             // // var Result = ListGenerator.ProductsList.Where(P=>P.UnitsInStock>0);
@@ -378,7 +378,41 @@ namespace LinQ_C__02_Demo
 
             #endregion
 
+            #region 7.Category : Generation Operators - Deferred Execution .
+            #region Range
+            //var Result05=Enumerable.Range(10,50);
+            //  foreach (var item in Result05)
+            //  {
+            //      Console.Write($"{item} ");
+            //  }
+            #endregion
 
+            #region Repeat
+            //List<Product> Result=Enumerable.Repeat(new Product(),10).ToList();
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);    
+
+            //}
+            //var Result02=Enumerable.Repeat(2,10);
+            //foreach (var item in Result02)
+            //{
+            //    Console.Write($"{item} ");
+
+            //}
+
+            #endregion
+
+            #region Empty
+            //List<Product> list = Enumerable.Empty<Product>().ToList();
+            //// ====
+            //List<Product> List02=new List<Product>();
+            #endregion
+
+
+
+
+            #endregion
         }
     }
 }
