@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System.Collections;
+using System.Diagnostics;
 using System.Numerics;
 
 namespace LinQ_C__02_Demo
@@ -275,7 +276,7 @@ namespace LinQ_C__02_Demo
             #endregion
 
             #region Sum / Average
-      
+
             //var Result = ListGenerator.ProductsList.Sum(P => P.UnitPrice);
             //Console.WriteLine(Result);// 2222.7100
             //Result =ListGenerator.ProductsList.Average(P => P.UnitPrice);    
@@ -302,6 +303,82 @@ namespace LinQ_C__02_Demo
 
 
             #endregion
+
+            #region 5.Category : Casting [Conversion] Operators - Immediate Execution
+            #region ToList
+            // //Old
+            // // var Result = ListGenerator.ProductsList.Where(P=>P.UnitsInStock>0);
+
+            // //New After Casting
+            //List<Product> Result = ListGenerator.ProductsList.Where(P=>P.UnitsInStock>0).ToList();
+
+            // foreach (var item in Result)
+            // {
+            //     Console.WriteLine(item);
+            // }
+            #endregion
+
+            #region ToArray
+            //Old
+            //var Result = ListGenerator.ProductsList.Where(P=>P.UnitsInStock>0);
+
+            ////New After Casting
+            //Product[] Result02 = ListGenerator.ProductsList.Where(P => P.UnitsInStock > 0).ToArray();
+
+            //foreach (var item in Result02)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+
+            #region ToDictionary
+            //Old
+            //var Result = ListGenerator.ProductsList.Where(P=>P.UnitsInStock>0);
+
+            //New After Casting
+            //Dictionary<long,Product> Result = ListGenerator.ProductsList.Where(P => P.UnitsInStock > 0).ToDictionary(P=>P.ProductID);
+            //Dictionary<long, string> Result = ListGenerator.ProductsList.Where(P => P.UnitsInStock > 0).ToDictionary(P => P.ProductID,P=>P.ProductName);
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine($"Key is  : {item.Key} And Value Is {item.Value}");
+            //}
+            #endregion
+
+            #region ToHashSet
+            //Old
+            // var Result = ListGenerator.ProductsList.Where(P=>P.UnitsInStock>0);
+
+            //New After Casting
+            //HashSet<Product> Result = ListGenerator.ProductsList.Where(P => P.UnitsInStock > 0).ToHashSet();
+
+            //   foreach (var item in Result)
+            //   {
+            //       Console.WriteLine(item);
+            //   }
+            #endregion
+
+            #region OfType
+            //ArrayList Result = new ArrayList()
+            //{
+            //    "Hazem",
+            //    "Fasdy",
+            //    "buyvb",
+            //    ",.m;",
+            //    ".,,.m l;",
+            //    1,2,3,4,5,6,7,8,9,10,11,12
+            //};
+            //var Result01=Result.OfType<int>();  
+            //foreach (var item in Result01)
+            //{
+            //    Console.Write($" { item}");//1 2 3 4 5 6 7 8 9 10 11 12
+            //}
+            #endregion
+
+
+            #endregion
+
+
         }
     }
 }
