@@ -413,6 +413,57 @@ namespace LinQ_C__02_Demo
 
 
             #endregion
+
+            #region 8.Category : Set Operators [Union Family] - Deferred Execution
+
+            //var Seq01 = Enumerable.Range(0, 100);
+            //var Seq02 = Enumerable.Range(50, 150);
+            //Console.WriteLine("=================Seq01================");
+            //foreach (var item in Seq01)
+            //{
+            //    Console.Write($"{item} ");
+            //}
+            //Console.WriteLine("\n\n=================Seq01================");
+            //foreach (var item in Seq02)
+            //{
+            //    Console.Write($"{item} ");
+            //}
+
+            //Console.WriteLine("\n\n=================Seq01================");
+
+            #region Union
+
+            //var Result = Seq01.Union(Seq02);
+            #endregion
+
+            #region Concatenate
+            //var Result = Seq01.Concat(Seq02);
+
+            #endregion
+
+            #region Distinct
+            //var Result = Seq01.Concat(Seq02);
+            //Result = Result.Distinct();
+
+
+            #endregion
+
+            #region Intersect
+            //var Result = Seq01.Intersect(Seq02);
+
+            #endregion
+
+            #region Except
+            //var Result = Seq01.Except(Seq02);
+
+            #endregion
+            //foreach (var item in Result)
+            //{
+            //    Console.Write($"{item} ");
+            //}
+
+            #endregion
+
         }
     }
 }
