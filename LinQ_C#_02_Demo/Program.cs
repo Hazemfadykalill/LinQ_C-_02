@@ -171,7 +171,7 @@ namespace LinQ_C__02_Demo
             #endregion
             #endregion
 
-            #region 2.Category : Ordering Operators [Ascending , Descending , Reverse , ThenBy , ThenByDescending]
+            #region 3.Category : Ordering Operators [Ascending , Descending , Reverse , ThenBy , ThenByDescending]
 
             #region Get Products Ordered By Price Asc
             ////Fluent Syntax
