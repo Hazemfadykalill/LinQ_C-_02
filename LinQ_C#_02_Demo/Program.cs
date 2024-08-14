@@ -264,7 +264,44 @@ namespace LinQ_C__02_Demo
 
             #endregion
 
+            #region 5.Category : Aggregate Operators  - Immediate Execution [ Count , Sum , Min , Max , Average ]
+            #region Count
+            //var Result = ListGenerator.ProductsList.Count();
+            //Console.WriteLine(Result);// 77
+            //Result = ListGenerator.ProductsList.Count(P => P.UnitsInStock > 0);
+            //Console.WriteLine(Result);// 72
 
+
+            #endregion
+
+            #region Sum / Average
+      
+            //var Result = ListGenerator.ProductsList.Sum(P => P.UnitPrice);
+            //Console.WriteLine(Result);// 2222.7100
+            //Result =ListGenerator.ProductsList.Average(P => P.UnitPrice);    
+            //Console.WriteLine(Result);// 28.866363636363636363636363636
+
+            #endregion
+            #region Max / Min
+            //    var MaxPrice = ListGenerator.ProductsList.Max(P => P.UnitPrice);
+            //    var Product=(from P in ListGenerator.ProductsList
+            //                where P.UnitPrice == MaxPrice
+            //                select P).FirstOrDefault();
+
+            //Console.WriteLine(Product); 
+
+            #endregion
+
+            #region Aggregate
+            //List<string> Names=new List<string>() { "Hazem","Fady","Mohamed","Khalil"};
+            //var Result = Names.Aggregate((st01, st02) => $"{st01} {st02}");
+            //Console.WriteLine(Result);  
+            #endregion
+
+
+
+
+            #endregion
         }
     }
 }
