@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinQ_C#_02_Demo", "LinQ_C#_02_Demo\LinQ_C#_02_Demo.csproj", "{231CC9CF-FBBE-419D-A920-8173A59402C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ_C3_02_Assignment", "LINQ_C3_02_Assignment\LINQ_C3_02_Assignment.csproj", "{1063637D-F82E-4BCF-BB2D-5F27A3CBAE1C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinQ_C3_02_Assignment", "LINQ_C3_02_Assignment\LinQ_C3_02_Assignment.csproj", "{1063637D-F82E-4BCF-BB2D-5F27A3CBAE1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
