@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Numerics;
 using System.Xml.Linq;
+using System.Text.RegularExpressions;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace LinQ_C__02_Demo
@@ -659,9 +660,31 @@ namespace LinQ_C__02_Demo
             //SkipLast => Skip Number of Elements From Last And Get Rest Of Elements
             //TakeWhile => Take Elements Till Element That do not Match Condition
             //SkipWhile => Skip Elements Till Element That do not Match Condition
-            
+
             #endregion
 
+            #region 13.Category : Let and Into [Valid With Query Syntax Only]
+            //List<string> list = new List<string> { "Omar", "Ali", "Mohamed", "Sally","Ahmed" };
+            //var Result = from N in list
+            //             select Regex.Replace(N, "[AOUIEaouie]", string.Empty)
+            //           into newTable
+            //             where newTable.Length > 3
+            //             select newTable;
+
+
+            //Result= from N in list
+            //        let newTable= Regex.Replace(N, "[AOUIEaouie]", string.Empty)
+                      
+            //        where newTable.Length > 3
+            //        select newTable;
+            //foreach (var name in Result)
+            //{
+            //    Console.WriteLine(name);
+            //}
+
+
+
+            #endregion
 
 
         }
