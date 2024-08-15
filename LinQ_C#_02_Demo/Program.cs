@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Diagnostics;
 using System.Numerics;
+using System.Xml.Linq;
 
 namespace LinQ_C__02_Demo
 {
@@ -488,6 +489,37 @@ namespace LinQ_C__02_Demo
             //Console.WriteLine(Result01);//false 
             #endregion
 
+
+            #endregion
+
+            #region 9.Category : Zipping Operator - ZIP
+
+            //List<string> Names= new List<string>() { "Ali","Ahmed","Ramy","Esayed" };
+            //int[] Numbers = Enumerable.Range(1, 10).ToArray();
+            //char[] Chars = new char[] { 'A', 'B', 'C', 'D', 'E' };
+            //var Result=Names.Zip(Numbers);
+            //(Ali, 1)
+            //(Ahmed, 2)
+            //(Ramy, 3)
+            //(Esayed, 4)
+
+            //var Result= Names.Zip(Numbers,(Name,Number)  =>new {Index=Number,Name});
+            //{ Index = 1, Name = Ali }
+            //{ Index = 2, Name = Ahmed }
+            //{ Index = 3, Name = Ramy }
+            //{ Index = 4, Name = Esayed }
+            //var Result=Names.Zip(Numbers, Chars); 
+            //(Ali, 1, A)
+            //(Ahmed, 2, B)
+            //(Ramy, 3, C)
+            //(Esayed, 4, D)
+
+           
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             #endregion
 
