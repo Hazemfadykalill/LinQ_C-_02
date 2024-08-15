@@ -1,7 +1,9 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Numerics;
 using System.Xml.Linq;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace LinQ_C__02_Demo
 {
@@ -514,7 +516,7 @@ namespace LinQ_C__02_Demo
             //(Ramy, 3, C)
             //(Esayed, 4, D)
 
-           
+
 
             //foreach (var item in Result)
             //{
@@ -522,6 +524,105 @@ namespace LinQ_C__02_Demo
             //}
 
             #endregion
+
+            #region 11.Category : Grouping Operators
+
+            #region //Get Products Grouped by Category 
+            ////fluent syntax
+            //var Result = ListGenerator.ProductsList.GroupBy(    P=>P.Category);
+            ////Query syntax
+            ////var Result = from P in ListGenerator.ProductsList
+            ////             group P by P.Category;
+            //foreach (var Category in Result)
+            //{
+            //    Console.WriteLine($"{Category.Key}\n\n");
+            //    foreach (var product in Category)
+            //    {
+            //        Console.WriteLine($"                 {product.ProductName}");
+            //    }
+            //}
+
+            #endregion
+
+
+            #region //Get Products in Stock Grouped by Category
+            ////fluent syntax
+            ////var Result = ListGenerator.ProductsList.Where(P=>P.UnitsInStock>0)
+            ////                                .GroupBy(P => P.Category);
+            ////Query syntax
+            //var Result = from P in ListGenerator.ProductsList
+            //             where P.UnitsInStock>0
+            //             group P by P.Category;
+            //foreach (var Category in Result)
+            //{
+            //    Console.WriteLine($"{Category.Key}\n\n");
+            //    foreach (var product in Category)
+            //    {
+            //        Console.WriteLine($"                 {product.ProductName}");
+            //    }
+            //}
+            #endregion
+
+
+            #region //Get Products in Stock Grouped by Category That Contains More Than 10 Product
+            //fluent syntax
+            //var Result = ListGenerator.ProductsList.Where(P => P.UnitsInStock > 0)
+            //                                .GroupBy(P => P.Category)
+            //                                .Where(P=>P.Count()>10);
+            //Query syntax
+            //var Result = from P in ListGenerator.ProductsList
+            //             where P.UnitsInStock > 0
+            //             group P by P.Category
+            //             into NewCategory
+            //             where NewCategory.Count()>10
+            //             select NewCategory;
+            //foreach (var Category in Result)
+            //{
+            //    Console.WriteLine($"{Category.Key}\n\n");
+            //    foreach (var product in Category)
+            //    {
+            //        Console.WriteLine($"                 {product.ProductName}");
+            //    }
+            //} 
+            #endregion
+
+            #region //Get Category Name of Products in Stock That Contains More Than 10 Product and Number of Product In Each Category
+
+            //fluent syntax
+            //var Result = ListGenerator.ProductsList.Where(P => P.UnitsInStock > 0)
+            //                                .GroupBy(P => P.Category)
+            //                                .Where(C => C.Count() > 10)
+            //                                .Select(X=>new
+            //                                {
+            //                                    CategoryName=X.Key,
+            //                                    Count=X.Count()
+            //                                });
+
+
+            //Query syntax
+            //var Result = from P in ListGenerator.ProductsList
+            //             where P.UnitsInStock > 0
+            //             group P by P.Category
+            //             into NewCategory
+            //             where NewCategory.Count() > 10
+            //             select new
+            //             {
+            //                 CategoryName = NewCategory. Key,
+            //                                                  Count= NewCategory.Count()
+            //             };
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+    
+
+
+            #endregion
+
+            #endregion
+
+
 
         }
     }
