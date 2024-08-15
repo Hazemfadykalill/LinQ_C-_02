@@ -615,11 +615,51 @@ namespace LinQ_C__02_Demo
             //{
             //    Console.WriteLine(item);
             //}
-    
+
 
 
             #endregion
 
+            #endregion
+
+            #region 12.Category : Partitioning Operators
+
+            #region Take
+            ////Take => Take Number of Elements From First Only
+            //var Result = ListGenerator.ProductsList.Take(10);
+            //Result = ListGenerator.ProductsList.TakeLast(10); 
+            #endregion
+
+            #region Skip
+            //Take => Take Number of Elements From First Only
+            //var Result = ListGenerator.ProductsList.Skip(10);
+            //Result = ListGenerator.ProductsList.SkipLast(10);
+            #endregion
+
+            #region TakeWhile &&  TakeWhile Index
+            //Take => Take Number of Elements From First Only
+            //var Result = ListGenerator.ProductsList.TakeWhile(P=>P.UnitsInStock>0);
+            //List<int> list=Enumerable.Range(0,10).ToList();
+            //var Result = list.TakeWhile((P,index)=>P==index);
+
+            #endregion
+
+            #region SkipWhile
+            //var list = Enumerable.Range(1, 10);
+            //var Result = list.SkipWhile(P =>P<3);
+
+            #endregion
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //Skip => Skip Number of Elements From First And Get Rest Of Elements
+            //TakeLast => Take Number of Elements From Last Only
+            //SkipLast => Skip Number of Elements From Last And Get Rest Of Elements
+            //TakeWhile => Take Elements Till Element That do not Match Condition
+            //SkipWhile => Skip Elements Till Element That do not Match Condition
+            
             #endregion
 
 
