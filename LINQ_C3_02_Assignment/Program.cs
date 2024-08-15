@@ -14,6 +14,7 @@ using System.Runtime.Intrinsics.Arm;
 using System.Text.RegularExpressions;
 using System.Xml;
 using System.Data.SqlTypes;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace LINQ_C3_02_Assignment
 {
@@ -579,6 +580,7 @@ namespace LINQ_C3_02_Assignment
             #endregion
 
             #endregion
+
             #region LINQ - Quantifiers
 
             #region             //1.Determine if any of the words in dictionary_english.txt(Read dictionary_english.txt into Array of String First) contain the substring 'ei'.
@@ -619,21 +621,65 @@ namespace LINQ_C3_02_Assignment
 
             #region             //3.Return a grouped a list of products only for categories that have all of their products in stock.
 
-           // var Result = ListGenerators.ProductList
-           //.GroupBy(p => p.Category)               // Group products by category
-           //.Where(g => g.All(p => p.UnitsInStock > 0))    // Filter to include only categories where all products are in stock
-           //.ToList();
+            // var Result = ListGenerators.ProductList
+            //.GroupBy(p => p.Category)               // Group products by category
+            //.Where(g => g.All(p => p.UnitsInStock > 0))    // Filter to include only categories where all products are in stock
+            //.ToList();
 
-           // foreach (var group in   Result)
-           // {
-           //     Console.WriteLine($"Category: {group.Key}");
-           //     foreach (var product in group)
-           //     {
-           //         Console.WriteLine($" - Product: {product.ProductName}, Stock: {product.UnitsInStock}");
-           //     }
-           // }
+            // foreach (var group in   Result)
+            // {
+            //     Console.WriteLine($"Category: {group.Key}");
+            //     foreach (var product in group)
+            //     {
+            //         Console.WriteLine($" - Product: {product.ProductName}, Stock: {product.UnitsInStock}");
+            //     }
+            // }
             #endregion
 
+            #endregion
+
+            #region LINQ – Grouping Operators
+            #region             1.Use group by to partition a list of numbers by their remainder when divided by 5
+
+
+            //List<int> numbers = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+
+
+            //var groupedNumbers = numbers
+            //    .GroupBy(n => n % 5)  // Group numbers by their remainder when divided by 5
+            //    .ToList();
+
+            //foreach (var group in groupedNumbers)
+            //{
+            //    Console.WriteLine($"Number With a Remainder Of: {group.Key} When Divided By 5");
+            //    foreach (var number in group)
+            //    {
+            //        Console.WriteLine($"{number}");
+            //    }
+            //}
+            #endregion
+
+            #region 2.	Uses group by to partition a list of words by their first letter.Use dictionary_english.txt for Input
+            //string[] words = File.ReadAllLines("dictionary_english.txt");
+
+
+            //var groupedWords = words
+            //    .GroupBy(word => word[0]) 
+            //    .ToList();
+
+
+            //foreach (var group in groupedWords)
+            //{
+            //    Console.WriteLine($"Words starting with '{group.Key}':");
+            //    foreach (var word in group)
+            //    {
+            //        Console.WriteLine($"{word}");
+            //    }
+            //}
+
+
+            #endregion
+          
             #endregion
         }
     }
