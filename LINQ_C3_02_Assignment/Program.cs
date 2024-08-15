@@ -12,6 +12,7 @@ using System.Diagnostics.Metrics;
 using System.Threading;
 using System.Runtime.Intrinsics.Arm;
 using System.Text.RegularExpressions;
+using System.Xml;
 
 namespace LINQ_C3_02_Assignment
 {
@@ -467,7 +468,59 @@ namespace LINQ_C3_02_Assignment
             #endregion
             #endregion
 
+            #region LINQ - Set Operators
 
+            #region             //1. Find the unique Category names from Product List
+
+            //var Result = ListGenerators.ProductList.Select(C => C.Category).Distinct();
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+            #region             //2.Produce a Sequence containing the unique first letter from both product and customer names.
+
+            //var ProductName = ListGenerators.ProductList.Select(P => P.ProductName[0]).Distinct();
+            //var CustomerName = ListGenerators.CustomerList.Select(P => P.CustomerName[0]).Distinct();
+            //var Result = ProductName.Union(CustomerName);
+            //foreach (var item in ProductName)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+
+            #region             //3.Create one sequence that contains the common first letter from both product and customer names.
+
+            //var ProductName = ListGenerators.ProductList.Select(P => P.ProductName[0]).Distinct();
+            //var CustomerName = ListGenerators.CustomerList.Select(P => P.CustomerName[0]).Distinct();
+            //var Result = ProductName.Intersect(CustomerName).Distinct();
+            //foreach (var item in ProductName)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+            #region             //4.Create one sequence that contains the first letters of product names that are not also first letters of customer names.
+            //var ProductName = ListGenerators.ProductList.Select(P => P.ProductName[0]).Distinct();
+            //var CustomerName = ListGenerators.CustomerList.Select(P => P.CustomerName[0]).Distinct();
+            //var Result = ProductName.Except(CustomerName);
+            //foreach (var item in ProductName)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+            #region             //5.Create one sequence that contains the last Three Characters in each name of all customers and products, including any duplicates
+
+            //var ProductName = ListGenerators.ProductList.Select(P => P.ProductName[0]).Distinct();
+            //var CustomerName = ListGenerators.CustomerList.Select(P => P.CustomerName[0]).Distinct();
+            //var Result = ProductName.Concat(CustomerName);
+            //foreach (var item in ProductName)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+            #endregion
         }
     }
 }
