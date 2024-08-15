@@ -492,7 +492,7 @@ namespace LinQ_C__02_Demo
 
             #endregion
 
-            #region 9.Category : Zipping Operator - ZIP
+            #region 10.Category : Zipping Operator - ZIP
 
             //List<string> Names= new List<string>() { "Ali","Ahmed","Ramy","Esayed" };
             //int[] Numbers = Enumerable.Range(1, 10).ToArray();
